@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Best Coding Practices for Web Developers
+    </title>
+</head>
+
+<body>
+    <header class="header text-white p-2 sticky-top">
+        <h2 class="pt-4 text-center">Best Coding Practices for Web Developers</h2>
+        <ol class="d-flex justify-content-center gap-5 ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">My CV</a></li>
+
+        </ol>
+    </header>
+
+    <section class="mx-auto w-75 w-md-50 w-lg-40  mt-4">
+        <div class="d-flex justify-content-between">
+            <div class="form-check thisOneOnly">
+                <!-- Best Practice 1 -->
+                <div class="border rounded-4 p-4">
+                    <div>
+                        <h1 class="badge ">1</h1>
+                        <span class="fw-bold">Use Semantic HTML: </span>
+                        <span>Improves accessibility, SEO, and code readability.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;header&gt;</span>,
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;nav&gt;</span>,
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;article&gt;</span>,
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;footer&gt;</span>
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 2 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">2</h1>
+                        <span class="fw-bold">Use External CSS and JS: </span>
+                        <span>Improves maintainability and keeps the HTML clean.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;link
+                                    rel="stylesheet"&gt;</span>
+                                and
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;script
+                                    src="file.js"&gt;</span>
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 3 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">3</h1>
+                        <span class="fw-bold">Optimize Images: </span>
+                        <span>Reduces loading time and improves user experience.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label" for="flexCheckDefault3">
+                            <p>My website uses optimized
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;img src="image.jpg"
+                                    alt="description"&gt;</span>
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 4 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">4</h1>
+                        <span class="fw-bold">Write Valid and Semantic Code: </span>
+                        <span>Ensures that your code is error-free and readable for others.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label" for="flexCheckDefault4">
+                            <p>My website follows coding standards and validation tools like
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">W3C Validator</span>
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+
+                <!-- Best Practice 5 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class=" badge ">5</h1>
+                        <span class="fw-bold">Mobile Responsiveness: </span>
+                        <span>Ensures your website works well on all devices.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                        <label class="form-check-label" for="flexCheckDefault5">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">@media queries</span>
+                                for responsive design.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 6 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">6</h1>
+                        <span class="fw-bold">Optimize for Accessibility: </span>
+                        <span>Ensures that users with disabilities can navigate your site.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                        <label class="form-check-label" for="flexCheckDefault6">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">aria-labels</span>
+                                and accessible navigation features.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 7 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">7</h1>
+                        <span class="fw-bold">Minimize HTTP Requests: </span>
+                        <span>Reduces page load time and improves performance.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                        <label class="form-check-label" for="flexCheckDefault7">
+                            <p>My website combines CSS, JS files and reduces
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">external requests</span>
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 8 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">8</h1>
+                        <span class="fw-bold">Use HTTPS: </span>
+                        <span>Ensures secure communication between the server and client.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                        <label class="form-check-label" for="flexCheckDefault8">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">HTTPS</span>
+                                to secure connections.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 9 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">9</h1>
+                        <span class="fw-bold">Use Proper Meta Tags: </span>
+                        <span>Helps with SEO and provides better page preview in social media.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                        <label class="form-check-label" for="flexCheckDefault9">
+                            <p>My website includes
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">&lt;meta
+                                    name="description"&gt;</span>
+                                and other relevant meta tags.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 10 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">10</h1>
+                        <span class="fw-bold">Avoid Inline Styles: </span>
+                        <span>Ensures better separation of concerns and improves maintainability.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                        <label class="form-check-label" for="flexCheckDefault10">
+                            <p>My website uses external CSS files for styles instead of inline styles.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 11 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">11</h1>
+                        <span class="fw-bold">Optimize CSS and JavaScript: </span>
+                        <span>Minimizes file size, improving page load times and performance.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                        <label class="form-check-label" for="flexCheckDefault11">
+                            <p>My website uses minified
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">CSS</span> and
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">JavaScript</span> files.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 12 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">12</h1>
+                        <span class="fw-bold">Use Clear and Descriptive Naming Conventions: </span>
+                        <span>Improves code readability and maintainability for developers.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                        <label class="form-check-label" for="flexCheckDefault12">
+                            <p>My website uses clear naming for variables, classes, and IDs such as
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">"main-header"</span> and
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">"cta-button"</span>.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 13 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">13</h1>
+                        <span class="fw-bold">Implement Caching Strategies: </span>
+                        <span>Reduces load time for repeat visitors and improves performance.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                        <label class="form-check-label" for="flexCheckDefault13">
+                            <p>My website uses
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">cache-control</span>
+                                and other caching headers to optimize performance.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 14 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">14</h1>
+                        <span class="fw-bold">Test and Debug Regularly: </span>
+                        <span>Ensures that your website works as intended and bugs are fixed promptly.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                        <label class="form-check-label" for="flexCheckDefault14">
+                            <p>My website is tested and debugged using
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">browser developer tools</span>
+                                and
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">testing frameworks</span>.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Best Practice 15 -->
+                <div class="border rounded-4 p-4 my-2">
+                    <div>
+                        <h1 class="badge ">15</h1>
+                        <span class="fw-bold">Use Version Control: </span>
+                        <span>Allows better collaboration, version tracking, and code management.</span>
+                    </div>
+                    <div class="ps-4 ">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                        <label class="form-check-label" for="flexCheckDefault15">
+                            <p>My website's code is managed using
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">Git</span>
+                                and hosted on platforms like
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">GitHub</span> or
+                                <span style="color: rgb(94, 43, 43); font-weight: bold;">GitLab</span>.
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Counter Display -->
+            <div>
+
+                <p class="border rounded-4 p-4 text-white" id="checked-count">0 of 15 selected</p>
+
+                <!-- <p id="checkedCount">Checked boxes: 0</p> -->
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Js Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

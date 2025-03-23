@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.header {
+    background-color: #231942;
+}
+
+ol {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+ol li a:hover {
+    text-decoration: none;
+    color: #ffffffd8
+}
+
+#checked-count {
+    background-color: #231942;
+}
+
+.badge {
+    background-color: #231942 !important;
+
+}
+
+.thisOneOnly {
+    height: 100vh;
+    /* Set the desired height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    padding-right: 10px;
+    /* Optional: Adjust for scrollbar */
+
+}
