@@ -43,3 +43,8 @@ ol li a:hover {
     /* Optional: Adjust for scrollbar */
 
 }
+
+#cat-image {
+    display: none;
+    width: 300px;
+}

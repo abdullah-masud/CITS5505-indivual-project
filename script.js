@@ -5,9 +5,23 @@ const countDisplay = document.getElementById('checked-count');
 // Function to update count
 function updateCount() {
     const checkedCount = document.querySelectorAll('.form-check-input:checked').length;
-    console.log(checkedCount)
-    const totalCount = checkboxes.length;
-    countDisplay.innerHTML = `${checkedCount} of ${totalCount} selected`;
+    const imgElement = document.getElementById('cat-image');
+    if (checkedCount >= 12) {
+        fetch('https://api.thecatapi.com/v1/images/search')
+            .then(response => response.json())
+            .then(data => {
+                const catImage = data[0].url;
+                imgElement.src = catImage;
+                imgElement.style.display = 'block'; // Show image
+            })
+        countDisplay.innerHTML = `SUCCESS! You have implemented ${checkedCount} out of 15 best coding practices! Keep going! 🎯`;
+        countDisplay.style.backgroundColor = 'green';
+    }
+    else {
+        imgElement.style.display = 'none'; // Hide image
+        countDisplay.style.backgroundColor = '#231942'
+        countDisplay.innerHTML = `${checkedCount} out of 15 is selected`;
+    }
 }
 
 // Add event listeners to all checkboxes
@@ -57,19 +71,13 @@ document.addEventListener('change', (event) => {
 // Load the checkbox states when the page loads
 window.addEventListener('load', loadCheckboxState);
 
-// Function to count checked checkboxes
-function updateCheckedCount() {
-    const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    document.getElementById('checked-count').innerText = `${checkedBoxes} of 15 selected`;
-}
-
 // Update count on page load
-window.addEventListener('load', updateCheckedCount);
+window.addEventListener('load', updateCount);
 
 // Update count whenever a checkbox is checked or unchecked
 document.addEventListener('change', (event) => {
     if (event.target.type === 'checkbox') {
         saveCheckboxState();
-        updateCheckedCount();
+        updateCount();
     }
 });
