@@ -34,17 +34,18 @@ ol li a:hover {
 
 }
 
-.thisOneOnly {
+.left-side {
     height: 100vh;
-    /* Set the desired height */
     overflow-y: auto;
-    /* Enable vertical scrolling */
     padding-right: 10px;
-    /* Optional: Adjust for scrollbar */
-
 }
 
 #cat-image {
     display: none;
     width: 300px;
+}
+
+.profile-info {
+    text-decoration: none;
+    color: inherit;
 }
