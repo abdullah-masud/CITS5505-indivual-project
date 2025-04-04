@@ -53,3 +53,13 @@ ol li a:hover {
 .references {
     background-color: #191a21;
 }
+
+@media (max-width: 576px) {
+    .header h2 {
+        font-size: 18px;
+    }
+
+    .alert p {
+        font-size: 14px;
+    }
+}
